@@ -1,0 +1,53 @@
+/* src/components/TaskItem.css */
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px;
+  margin: 8px 16px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.task-content {
+  display: flex;
+  align-items: center;
+  flex: 1; /* İçeriğin genişlemesini sağlar */
+}
+
+.task-checkbox {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  cursor: pointer;
+  accent-color: #6200ee; /* Checkbox rengini değiştirir */
+}
+
+.task-text {
+  font-size: 16px;
+  color: #333;
+  flex: 1; /* Metnin genişlemesini sağlar */
+  word-break: break-word; /* Uzun kelimelerin satır atlamasını sağlar */
+}
+
+.task-text.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.delete-button {
+  background-color: #f44336; /* Kırmızı renk */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 15px; /* Checkbox ve yazıdan ayırır */
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #d32f2f;
+}

@@ -1,0 +1,38 @@
+/* src/components/TaskInput.css */
+.task-input-container {
+  display: flex;
+  margin: 20px 16px;
+  gap: 10px; /* Elemanlar arasına boşluk bırakır */
+}
+
+.task-input {
+  flex: 1;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  padding: 0 15px;
+  font-size: 16px;
+  background-color: #fff;
+  outline: none; /* Odaklandığında kenarlığı kaldırır */
+}
+
+.task-input:focus {
+  border-color: #6200ee; /* Odaklandığında rengi değiştirir */
+  box-shadow: 0 0 0 3px rgba(98, 0, 238, 0.2); /* Hafif gölge ekler */
+}
+
+.add-button {
+  background-color: #6200ee;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #3700b3;
+}
